@@ -1,5 +1,7 @@
 # Analytical Platform For eCommerce
 
+![alt text](Build-an-Analytical-Platform-for-eCommerce-using-AWS-Services.drawio.svg)
+
 ## Business Overview
 
 Ecommerce analytics is the process of collecting data from all of the sources that affect a certain shop. Analysts can then utilize this information to deduce changes in customer behavior and online shopping patterns. Ecommerce analytics spans the whole customer journey, from discovery through acquisition, conversion, and eventually retention and support.
