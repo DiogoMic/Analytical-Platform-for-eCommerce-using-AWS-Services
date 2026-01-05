@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template for Kinesis Data Stream with on-demand capacity'
+
+Resources:
+  MainDataDataStream:
+    Type: AWS::Kinesis::Stream
+    DeletionPolicy: Delete
+    UpdateReplacePolicy: Delete
+    Properties:
+      StreamModeDetails:
+        StreamMode: ON_DEMAND
+      MaxRecordSizeInKiB: 1024
+      RetentionPeriodHours: 24
+      Tags:
+        - Key: Name
+          Value: Diogo
+
+Outputs:
+  StreamName:
+    Description: 'Name of the Kinesis Data Stream'
+    Value: !Ref MainDataDataStream
+    Export:
+      Name: !Sub '${AWS::StackName}-StreamName'
+  
+  StreamArn:
+    Description: 'ARN of the Kinesis Data Stream'
+    Value: !GetAtt MainDataDataStream.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-StreamArn'
