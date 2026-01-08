@@ -109,6 +109,11 @@ Amazon DynamoDB is a fully managed key-value NoSQL database service that deliver
 ![alt text](<Screenshot 2026-01-08 at 09.18.59.png>)
 
 
+### Lambda
+
+![alt text](<Screenshot 2026-01-04 at 07.04.19.png>)
+
+
 ## Key Takeaways
 
 - Understanding the project Overview and Architecture
